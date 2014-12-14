@@ -1,7 +1,9 @@
+/*
+The following is not free application. You may use it for educational purposes, but you may not redistribute or use it commercially.
+(C) All Rights Reserved, Rushil Kapoor 2014
+*/
+
 var labels = [], words = [], probability = [];
-//label - {name, docCount}
-//words - {name, language, count}
-//probability - {name, value}
 
 $(document).ready(function (){
 	//ENGLISH
@@ -76,7 +78,29 @@ $(document).ready(function (){
 	train(" As baleias Francas são bem diferentes de outras baleias. Possuem corpos negros arredondados e verrugas de cor branca em suas cabeças. Essas verrugas servem como identificadores para os pesquisadores e são parecidos com a impressão digital humana, pois cada baleia nasce com um desenho único das mesmas. ", 'portuguese');
 	train(" O inverno (no Hemisfério Norte) é uma época de festas pelo mundo: Hanukah, Natal, Kwanzaa e Ano Novo, para mencionar algumas. As diversas culturas comemoram suas festas de maneiras diferentes, mas, freqüentemente, quando as pessoas se reúnem para celebrar, também se reúnem para comer.", 'portuguese');
 	
+	//Dutch
+	train("Het vele gereis, de beperkte beschikbare ruimte en het soms aan de ketting leggen van wilde dieren tasten het welzijn aan. Dijksma: Het is niet meer van deze tijd dat wilde dieren als olifanten en tijgers optreden in een circus. De aantasting van het dierenwelzijn weegt niet op tegen het gebruik van deze dieren voor vermaak en instandhouding van een traditie.", 'dutch');
+	train("In onze tijd en maatschappij is het onvermijdelijk dat je elke dag veel tijd achter een computer of laptop doorbrengt. Dat geldt natuurlijk voor scholieren en studenten, maar ook steeds vaker voor volwassenen. Op kantoor werken we immers ook uitsluitend met computers en laptops. Zelfs mensen die in in hun beroep niet zittend werken, krijgen na hun werktijden vaak te maken met een computer of een laptop.", 'dutch');
+	train("De budgetpolissen in relatie tot de zorgplicht; voldoen ook de meest vergaande budgetpolissen aan de zorgplicht, waaronder het leveren van zorg tijdig, binnen redelijke afstand En wordt gecontracteerd op het criterium kwaliteit en prestatie, of alleen prijs Marketing zorgverzekeraars; wat is de praktijksituatie betreffende de marketing van zorgverzekeraars met polissen gericht op specifieke doelgroepen? Leidt dit tot ongewenste risicoselectie.", 'dutch');
+	train("Bewustwording van het bestaan en de impact van ziektegerelateerde ondervoeding is niet alleen van belang voor diëtisten maar ook voor alle overige zorgprofessionals, zoals de overheid, verzekeraars en de voedingsmiddelenindustrie. Uiteraard is er ook aandacht voor patiënten zelf. Stichting EOI heeft voor de Dag van de Ondervoeding informatiemateriaal dat zorgverleners, zoals artsen en diëtisten, kunnen gebruiken om ziektegerelateerde ondervoeding op de kaart te zetten. ", 'dutch');
+	train("Door het dragen van thermische onderkleding zal je een stuk minder last hebben van een nat en bezweet lichaam, omdat het transpiratievocht gemakkelijker wordt afgevoerd. Thermische kleding is gemaakt van kunststofvezels die weinig vocht vasthouden. Bij een gewoon katoenen T-shirt is dat wel het geval, omdat katoen bestaat uit holle vezels die gemakkelijk vocht vasthouden.Deze laag is een vest of een trui dat je warm houd. ", 'dutch');
+	train("Als de senatoren akkoord gaan, vervalt voor alle Nederlandse burgers het recht om zelf een arts, zorgverlener of zorginstelling te kiezen. Die keuze kan en zal dan worden beperkt door de zorgverzekeraar. Volgens de organisaties zet dat de solidariteit tussen ziek en gezond en arm en rijk verder onder druk. Het zal leiden tot tweedeling op grond van de financiële positie van mensen. In het manifest lichten de partijen toe waarom het afschaffen van vrijeartsenkeuze een onjuiste beslissing is:", 'dutch');
+	train("Eind oktober trokken de voormalige leveranciers van het schoolfruit zich op het allerlaatste moment terug, waardoor het programma stil kwam te liggen. Supermarktketen Lidl meldde zich daarop bij het ministerie van Economische Zaken. In korte tijd kwam een nieuwe samenwerking tot stand. Hierdoor kan de levering van kwalitatief goed fruit snel worden hervat op een flink deel van de scholen die zich ingeschreven hebben.", 'dutch');
+	train("In Nederland krijgen jaarlijks naar schatting mensen te maken met een of andere vorm van hersenletsel als gevolg van bijvoorbeeld een herseninfarct, hersenbloeding of ongeluk. Zowel lichamelijke als cognitieve problemen zijn het gevolg en kunnen een enorme impact hebben op het dagelijks functioneren. Sporten is een cruciaal middel om deze problemen aan te pakken. Uit wetenschappelijk onderzoek blijkt steeds vaker dat lichaamsbeweging niet alleen ons lijf, maar ook ons brein in conditie houdt. ", 'dutch');
+	train("Als het aan de overheid ligt, moet deelnemen aan vrijwilligersactiviteiten de afstand tot de arbeidsmarkt verkleinen en bijdragen aan het verantwoordelijk maken van bijstandsontvangers. Maar bijstandscliënten die vrijwilligerswerk doen, vinden zelden een betaalde baan. Hoe is dat mogelijk? Vanuit dat perspectief hebben de Hersenstichting en de Edwin van der Sar Foundation de handen ineengeslagen om mensen te motiveren om weer in beweging te komen en het sporten in een fijne omgeving mogelijk te maken.", 'dutch');
+	train("Enige positieve is dat van de 100 gemeenten waarbij een Wmo-verordening en beleidsplan is opgevraagd er 83 waren die dit hadden. “Maar de twintig die we echt goed hebben bekeken hebben bijna allemaal de standaard verordeningtekst van de Vereniging Nederlandse Gemeenten (VNG) overgenomen. En daar staat niets concreets in, alleen algemene formuleringen of zinnen die wij zelfs drie keer moeten nalezen. Als je zorg van je gemeente nodig hebt, heb je daar helemaal niets aan.", 'dutch');	
 		
+	//Danish
+        train("Såvel svenske som danske jagerfly blev sendt på vingerne fredag formiddag. Formålet var at identificere det ukendte fly, der kun viste sig som et mål på radarskærmene. Flyet har efter de foreliggende oplysninger ikke krænket Danmark, idet det befandt sig i internationalt luftrum under svensk flykontrol.Det russiske militærfly undlod at have sin radar transponder aktiveret, hvilket ikke er ulovligt.En af hjørnestenene i overvågningen af luftrummet over Østersøen er Radarhoved Bornholm i Segen.", 'danish');
+        train("Forud for vores møde har hun rejst rundt i Danmark og stikprøveindkøbt mere end 30 forskellige svinekamme fra 16 forskellige butikskæder for at få et indtryk af kvaliteten på dette års julegris. Undersøgelsen viser blandt andet, at der er stor forskel på, hvordan slagteren har håndteret kødet. Kun lige over halvdelen af de indkøbte flæskestege gør sig fortjent til prædikatet ‘god skærekvalitet’ med pæne, lige ender og flot ridset svær. Næsten hver femte steg ", 'danish');
+        train("Læg altid dine værdier i inderlommer. Yderlommer og i særdeleshed baglommen er guf for tyven, hvis ikke de er lukket sikkert. Vælg en taske, der kan lukkes sikkert. Lynlås er for eksempel bedre end en klap med velcro eller løse knapper. Læg dine værdier i taskens inderste lommer. Vær ekstra opmærksom, når du færdes steder, der er tæt pakket med mennesker. Vær skeptisk, hvis nogen pludselig støder ind i dig, og hold altid din taske godt ind til kroppen.", 'danish');
+        train("Hvis du er i mellemindkomstgruppen og ejer en bolig, så se at få banket gælden med en høj rente af, og få dig noget friværdi i din bolig i stedet for at spare op til din pension, så du kan bruge friværdien som pension,« siger økonomisk rådgiver i Finanshuset i Fredensborg Kim Valentin. Friværdi bliver nemlig ikke modregnet i din folkepension. Regeringen har nedsat en pensionskommission, der specifikt skal se på, hvad man kan gøre for at løse problemet for dem med lav- og mellemindkomster.", 'danish');
+        train("I det fattige land i det Caribiske Hav havde flyselskabet opstillet en computer i en af de fattigste bydele, hvor børn og voksne kunne snakke med julemanden og fortælle ham, hvad de ønskede sig. Og så mange indbyggere stod i kø, at Julemanden måtte blive i værkstedet det meste af aftenen. Dagen var alle indbyggerne inviteret til stor julefest på stranden, hvor WestJet-medarbejdere havde knoklet dagen lang for at sætte op, mens andre havde spænet rundt for at skaffe alle gaverne.", 'danish');
+        train("Karrierekvinder har det hårdt. I hvert fald ifølge Rasmus Jarlov, som er politisk leder for De Konservative i København, som har stukket sin hånd i en hvepserede ved at komme med et bud på kønnenes roller, og ikke mindst hvad kvinder og mænd bliver tiltrukket af hos hinanden. Politikerens første opslag om emnet udspringer af lørdagens Finans-historie Karrierekvinder er oftere singler. Heri forklarede kønsforskere, hvorfor kvinder muligvis kan have vanskeligt ved at gifte sig under deres niveau.", 'danish');
+        train("Populisme er ifølge ordbøgerne en leflen for øjeblikkets stemning. Det kan roligt slås fast, at begrebet har fyldt en del i sagen om Danmarks Radios Underholdningsorkester. Da DR’s generaldirektør i begyndelsen af september meddelte, at institutionen som en konsekvens af de krav om besparelser, som stilles i den nye medieaftale fra juni, havde besluttet at lukke orkesteret med virkning fra den 1. januar 2015, gik der ikke lang tid, inden et vist røre begyndte at brede sig. På de sociale medier oprettedes straks en underskriftindsamling", 'danish');
+        train("Dansk er et nord germansk sprog med omkring millioner højttalere primært i Danmark, men også i Grønland, Tyskland, Norge, Sverige, De Forenede Arabiske Emirater. Dansk var det officielle sprog i Norge, indtil omkring og Islands indtil. dansk er nu det første fremmedsprog lært i Island. I middelalderen blev dansk stærkt påvirket af nedertyske dialekter, mens i det. århundrede dansk absorberet mange franske låneord og fra det. århundrede og frem, er blevet taget i dansk mange engelske ord.", 'danish');
+        train("Driftsdirektøren forstår ikke den virak, som kursskiftet har udløst i Sverige, hvor både forsvarsministeren og chefen for flyvevåbnet har kaldt det russiske militærflys handlemåde for farlig og uhensigtsmæssig. Ifølge Cimbers hjemmeside er der plads til 50 passagerer på den flytype, som fløj. Hvor mange af sæderne, der var besat på fredagens flyvning, ved Jørgen Nielsen ikke. Det er uhensigtsmæssigt og ikke særlig kollegialt, at militærfly flyver uden deres transponder tændt. Men militærflyet ved, hvor alle andre fly er. Ellers sover de i", 'danish');
+        train("Flere britiske lufthavne forventes at blive påvirket af computerfejlens medfølgende forsinkelser. En talskvinde for de britiske flyveledere (Nats), bekræfter over for The Guardian, at der er tale om en teknisk fejl på i et kontrolcenter i Hampshire, som er et vigtigt center for den sydlige britiske lufttrafikskontrol. Meldinger fra Londons største Lufthavn, Heathrow, lyder, at flere afgange og landinger er indstillet, og at man opfordrer folk til at tjekke om deres flyafgang er påvirket, inden man tager mod lufthavnen.", 'danish');
 	
 	//Count of Words of every Language
 	console.log("unique words");
@@ -104,8 +128,7 @@ function unique(text) {
 }
 
 function tokenize(text) {
-    text = text.toLowerCase().replace(/\W/g, ' ').replace(/\s+/g, ' ').trim().split(' ');     // \W-non word character, \s-white space character, + for consecutive characters replaced by single modifier, /g- look globally; all of the matches
-																			// .split splits the text into array of words.
+    text = text.toLowerCase().replace(/\W/g, ' ').replace(/\s+/g, ' ').trim().split(' ');
 	text = unique(text);
     return text;
 };
@@ -131,6 +154,7 @@ function updateWords(text, label){
 	var i, index;
 	var token = tokenize(text);
 	for (i = 0; i < token.length; i++){
+		index = -1;
 		index = searchWord(token[i], words);
 		if(index == -1)
 			words.push({name: token[i], language: label, count: 1});
@@ -199,15 +223,12 @@ function getWinner() {
 function guess() {
 	$('#result').empty();
 	var phrase = tokenize($('#phrase').val());
-	//console.log(phrase);
 	var	totalcount, word;
-	
 	for(var i=0; i< labels.length; i++){
 		var label = labels[i].name;
 		var doccount = labels[i].docCount;
 		var docinversecount = docInverseCount(i);
-		//var num = 1, den =1;
-		var temp, Sum=0;
+		var num = 1, temp, den =1, Sum=0;
 		
 		for(var j=0; j< phrase.length; j++){
 			word = phrase[j];
@@ -221,16 +242,26 @@ function guess() {
 				if (wordProb === 1)
 					wordProb = 0.99;
 				else if (wordProb === 0)
-					wordProb = 0.01;
-		
+					wordProb = 0.01; 
+			/*
+				if (wordLabelProb === 1)
+					wordLabelProb = 0.99;
+				else if (wordLabelProb === 0)
+					wordLabelProb = 0.01;
+				if (wordInverseLabelProb === 1)
+					wordInverseLabelProb = 0.99;
+				else if (wordInverseLabelProb === 0)
+					wordInverseLabelProb = 0.01;    
+				num *= wordLabelProb;
+				den *= (wordLabelProb + wordInverseLabelProb);	  */
+
 				Sum += (Math.log(1 - wordProb) - Math.log(wordProb));
 			} 
-		}
-		//temp = num / (num + den);            
-		temp = ( 1/(1 + Math.exp(Sum)));
+		}  
+         	temp = ( 1/(1 + Math.exp(Sum)));
 		probability.push({name: label, value: temp}); 
 		console.log(probability[i].name, probability[i].value);
     }
 	getWinner();
 	probability.length = 0;
-} 
+} 				
